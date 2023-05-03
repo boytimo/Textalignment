@@ -1,8 +1,8 @@
 import os
 
-dof_dir = r"C:\Users\boyti\Desktop\새 폴더 (2)"
-log_dir = r"C:\Users\boyti\Desktop\새 폴더 (2)\pp"
-output_dir = r"C:\Users\boyti\Desktop\새 폴더 (2)"
+dof_dir = r"C:\Users\boyti\Desktop\Textpy"
+log_dir = r"C:\Users\boyti\Desktop\Textpy"
+output_dir = r"C:\Users\boyti\Desktop\Textpy"
 
 dof_path = os.path.join(dof_dir, "DOF.txt")
 log_path = os.path.join(log_dir, "log.txt")
@@ -10,7 +10,7 @@ output_path = os.path.join(output_dir, "merged.txt")
 
 with open(dof_path, "r") as dof_file, open(log_path, "r") as log_file, open(output_path, "w") as merged_file:
     # 머리글 작성
-    merged_file.write("index, VR time, VR Pitch, VR Roll, Motion Time, Motion Pitch, Motion Roll\n")
+    merged_file.write("index, Row 0, Row 1, Row 2, Row 3, Row 4, Row 5\n")
 
     dof_lines = dof_file.readlines()
     log_lines = log_file.readlines()
